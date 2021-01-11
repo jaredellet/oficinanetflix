@@ -1,0 +1,131 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Leander';
+    src: url('fonts/Leander.ttf');
+    src: url('fonts/Leander.eot?#iefix') format('embedded-opentype');
+   
+    font-family: 'Netflixfont';
+    src: url('fonts/Netflix font.ttf');
+    src: url('fonts/Netflix font.eot?#iefix') format('embedded-opentype');
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: blanchedalmond;
+
+}
+
+header .container {
+    border: 1px solid black;
+    display: flex; /*conceito de flexbox: uma maneira de alinhar os elementos em tela.*/
+    flex-direction: row;
+    align-items: center; /*alinha os elementos no centro (vertical)*/
+    justify-content: space-between; /*alinha os elementos de maneira vertical*/
+
+
+
+}
+
+header .logo {
+    margin-left: 6px;   
+    color: var(--vermelho);
+    font-family: 'Netflixfont';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*sérieprincipal*/
+.serieprincipal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/peakylogo.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.serieprincipal .descricao {
+    margin-bottom: 40px;
+}
+
+.descricao {
+    font-family: 'Netflixfont';
+    color: white;
+}
+
+.titulo {
+    font-size: 40px;
+    font-family: 'Leander';
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50) ;
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 1s ease all;
+
+
+}
+
+.botao:hover {
+    background-color:white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.serieprincipal .container{
+   width: 70%; 
+}
+
+.boxfilmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carroselfilmes{
+    margin-top: 5px;
+}
+
